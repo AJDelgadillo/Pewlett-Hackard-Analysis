@@ -7,7 +7,7 @@ In this challenge our client, Pewlett-Hackard, was interested in identifying how
 ## Purpose
 The purpose of this challenge was to better understand how to use PostgreSQL to analyze and manipulate a large dataset. At the beginning of this module we were presented with 6 CSV files holding a very substantial amount of data. Initially we were instructed to use quickdatabasediagrams.com to create a physical Entity Relationship Diagram. This allows the viewer to identify the primary and foreign keys in a table, datatypes, and gives a visualization of where the information overlaps between all 6 tables. Using the ERD as a guide for the rest of the module, we used PostgreSQL to further analyze the data and answer the questions of the client.
 
-![EmployeesDB.png](Pewlett-Hackard-Analysis/Analysis/EmployeesDB.png)
+![EmployeesDB.png](Analysis/EmployeesDB.png)
 
 # Results:
 ## Analysis of Deliverable 1
