@@ -11,8 +11,8 @@ The purpose of this challenge was to better understand how to use PostgreSQL to 
 
 # Results:
 ## Analysis of Deliverable 1
-When creating the table titled ‘retirement_titles’ we selected information from the two tables ‘employees’ and ‘titles’ where the employees birthday fell between the years 1952 and 1955. This resulted in a table holding 133,776 rows of data. On this table we used the ‘DISTINCT ON ()’ function to remove duplicate employee number entries. Then, we added another condition in which the ’to_date’ was set equal to 9999-01-01. This ensures that the table does not contain any employees that have already left the company. After we applied these filters the result was a table containing 72,458 rows of data. 
-Lastly, we created another table showing each job title and how many employees having that job title are expected to retire. This table was titled retiring_titles, and was exported from the program as a CSV file.
+When creating the table titled ‘[retirement_titles.csv](Analysis/retirement_titles.csv)’ we selected information from the two tables ‘employees’ and ‘titles’ where the employees birthday fell between the years 1952 and 1955. This resulted in a table holding 133,776 rows of data. On this table we used the ‘DISTINCT ON ()’ function to remove duplicate employee number entries. Then, we added another condition in which the ’to_date’ was set equal to 9999-01-01. This ensures that the table does not contain any employees that have already left the company. After we applied these filters the result was a table containing 72,458 rows of data. This second table was titled '[unique_titles.csv](Analysis/unique_titles.csv)'.
+Lastly, we created another table showing each job title and how many employees having that job title are expected to retire. This table was titled '[retiring_titles.csv](Analysis/retiring_titles.csv)', and was exported from the program as a CSV file.
 ### Results of Deliverable 1
 In this table we can see that:
 - 72,458 employees are expected to retire soon. 
@@ -22,8 +22,9 @@ In this table we can see that:
 
 ## Analysis of Deliverable 2
 In the second deliverable we called on information from three tables, ‘employees’, ‘titles’, and ‘dept_emp’, to identify employees that are eligible for a mentorship program. When creating this table we applied two conditions. First, we applied a filter to only include employees having a birthday in the year 1965. Next, we filtered the ‘to_date’ equal to 9999-01-01, to ensure that the table won’t contain any employees that have already left the company. Similarly to deliverable 1, we used the function ’DISTINCT ON ()’ to remove any duplicate employee number entries.
- This resulted in a table containing 1,549 rows of data. This table was titled ‘mentorship_eligibilty’
-## Results of Deliverable 2
+This resulted in a table containing 1,549 rows of data. This table was titled '[mentorship_eligibilty.csv](Analysis/mentorship_eligibilty.csv)'.
+
+### Results of Deliverable 2
 In this table we found that:
 - Only 1,549 employees are eligible to participate in the mentorship program. 
 
